@@ -52,7 +52,7 @@ jobs:
       run: |
         curl -L "https://packages.cloudfoundry.org/stable?release=linux64-binary&source=github&version=v6" | tar -zx
         sudo mv cf /usr/local/bin
-      
+    
       
     - name: Login Cloud Foundry
       run: cf l -a https://api.us-south.cf.cloud.ibm.com login -u ${{ secrets.IBM_MAIL }} -p ${{ secrets.IBM_PWD }}
